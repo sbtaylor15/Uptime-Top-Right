@@ -38,7 +38,7 @@
      long diff = Math.abs(now.getTime() - start.getTime()) / 1000L;
      ServletContext application = getServletConfig().getServletContext();
      this.message = 
-       ("<html><head><link rel=\"stylesheet\" type=\"text/css\" href=\"default.css\"><title>Uptime</title></head><body><div id=\"outer\"> <div id=\"header\">  <h1><a href=\"#\">Tomcat Node Status</a></h1>" + 
+       ("<html><head><link rel=\"stylesheet\" type=\"text/css\" href=\"default.css\"><title>Uptime</title></head><body><div id=\"outer\"> <div id=\"header\">  <h1><a href=\"#\">Tomcat Node " +  System.getenv("TCNODE") + " Status</a></h1>" + 
        " </div>" + 
        " <div class=\"main\"><table><tr><td align=\"right\">Tomcat Version :</td><td>" + application.getServerInfo() + "</td></tr>");
      this.message = (this.message + "<tr><td align=\"right\">Servlet Specification Version :</td><td>" + application.getMajorVersion() + "." + application.getMinorVersion() + "</td></tr>");
