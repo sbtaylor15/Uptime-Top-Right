@@ -37,13 +37,6 @@ a:hover
 
 /* Header */
 
-#header
-{
-	position: relative;
-	background: Blue;
-	height: 10em;
-	padding-left: 2em;
-}
 
 #header h1
 {
