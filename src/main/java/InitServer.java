@@ -40,7 +40,7 @@
      this.message = 
        ("<html><head><META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\"><META HTTP-EQUIV=\"Expires\" CONTENT=\"-1\"><link rel=\"stylesheet\" type=\"text/css\" href=\"default.css?ver=" + diff + "\"><title>Uptime</title></head><body><div id=\"outer\"> <div id=\"header\">  <h1><a href=\"#\">Tomcat Node " +  System.getProperty("TCNODE") + " Status</a></h1>" + 
        " </div>" + 
-       " <div class=\"main\"><table><tr><td align=\"right\">Tomcat Version :</td><td>" + application.getServerInfo() + "</td></tr>");
+       " <div class=\"main\"><table><tr><td align=\"right\">Uptime Application Version :</td><td>" + application.getServerInfo() + "</td></tr>");
      this.message = (this.message + "<tr><td align=\"right\">Servlet Specification Version :</td><td>" + application.getMajorVersion() + "." + application.getMinorVersion() + "</td></tr>");
      this.message = (this.message + "<tr><td align=\"right\">JSP version :</td><td>" + JspFactory.getDefaultFactory().getEngineInfo().getSpecificationVersion() + "</td></tr>");	 	 
      this.message = (this.message + "<tr><td align=\"right\">Start Time :</td><td>" + start.toString() + "</td></tr>");
