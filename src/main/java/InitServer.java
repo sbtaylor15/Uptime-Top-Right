@@ -2,7 +2,8 @@
 // TEST 
  import java.io.IOException;
  import java.io.PrintWriter;
- import java.util.Date;
+import java.nio.charset.StandardCharsets;
+import java.util.Date;
  import javax.servlet.ServletConfig;
  import javax.servlet.ServletContext;
  import javax.servlet.ServletException;
@@ -11,6 +12,14 @@
  import javax.servlet.http.HttpServletResponse;
  import javax.servlet.jsp.JspEngineInfo;
  import javax.servlet.jsp.JspFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Document;
  
  public class InitServer extends HttpServlet
  {
